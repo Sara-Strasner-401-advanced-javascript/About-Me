@@ -4,7 +4,7 @@ var Name = prompt('Hello! Welcome to my About Me page! What is your name?');
 alert('Welcome, ' + Name + '!');
 
 
-// QUESTION 1 
+// QUESTION 1
 
 var Game = prompt('Let\'s play a guessing game to see what you already know about me! Are you interested in playing?');
 
@@ -72,7 +72,7 @@ if (Siblings.toLowerCase() === 'yes') {
 }
 
 
-// QUESTION 6 
+// QUESTION 6
 var number = 7;
 
 for (var i = 0; i < 4; i++) {
@@ -96,7 +96,7 @@ for (var i = 0; i < 4; i++) {
 
 var movies = ['Titanic', 'Get Out', 'The Labyrinth'];
 
-for (var i = 0; i < 6; i++){
+for (var x = 0; x < 6; x++){
   var whatmovie = prompt('Can you guess one of my favorite movies?');
   var answeredcorrect = false;
   // this loop only checks for correct answers
