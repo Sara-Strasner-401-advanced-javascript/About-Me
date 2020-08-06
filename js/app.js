@@ -10,9 +10,9 @@ var Game = prompt('Let\'s play a guessing game to see what you already know abou
 
 // console.log('Does the user want to play a game? ' + Game);
 
-if (Game.toLowerCase() === 'yes') {
+if (Game.toLowerCase() === 'yes' || Game.toLowerCase() === 'y') {
   alert('Awesome! Let\'s play a game!');
-} else if(Game.toLowerCase() === 'no'){
+} else if(Game.toLowerCase() === 'no' || Game.toLowerCase() === 'n'){
   alert('Too bad. We\'re playing anyway!');
 } else {
   alert('Please enter yes or no.');
@@ -70,3 +70,46 @@ if (Siblings.toLowerCase() === 'yes') {
 } else {
   alert('Please enter yes or no.');
 }
+
+
+// QUESTION 6 
+var number = 7;
+
+for (var i = 0; i < 4; i++) {
+  var guess = prompt('Let\'s play a guessing game. Try to guess my favorite number.');
+  if (parseInt(guess) < number) {
+    alert('Too low!');
+  } else if (parseInt(guess) > number) {
+    alert('Too high!');
+  } else if (parseInt(guess) === number){
+    alert('Correct!');
+    break;
+  }
+  if (i === 3) {
+    alert('You are out of guesses. The correct answer is ' + number);
+    break;
+  }
+}
+
+
+// QUESTION 7
+
+var movies = ['Titanic', 'Get Out', 'The Labyrinth'];
+
+for (var i = 0; i < 6; i++){
+  var whatmovie = prompt('Can you guess one of my favorite movies?');
+  var answeredcorrect = false;
+  // this loop only checks for correct answers
+  for (var j = 0; j < movies.length; j++){
+    if (movies[j] === whatmovie){
+      alert('You are correct!');
+      answeredcorrect = true;
+    }
+  }
+  if (answeredcorrect === true){
+    break;
+  } else {
+    alert('You are incorrect. Please try again.');
+  }
+}
+

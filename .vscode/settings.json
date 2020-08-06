@@ -10,5 +10,6 @@
       "detail",
       "img"
     ]
-  }
+  },
+  "liveServer.settings.port": 5501
 }
