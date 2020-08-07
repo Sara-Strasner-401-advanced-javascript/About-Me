@@ -2,12 +2,11 @@
 
 
 var Name = prompt('Hello! Welcome to my About Me page! What is your name?');
-// QUESTION 1
+
 alert('Welcome, ' + Name + '!');
 function question1() {
   var Game = prompt('Let\'s play a guessing game to see what you already know about me! Are you interested in playing?');
 
-  // console.log('Does the user want to play a game? ' + Game);
 
   if (Game.toLowerCase() === 'yes' || Game.toLowerCase() === 'y') {
     alert('Awesome! Let\'s play a game!');}
@@ -23,12 +22,9 @@ var finalScore = 0;
 
 
 
-// QUESTION 2
 function question2() {
 
-  // your loop
   var South = prompt('Am I a native Washingtonian?');
-  // console.log('Does the user think I\'m from Washington? ' + South);
 
   if (South.toLowerCase() === 'yes') {
     alert('Not quite! I was born and raised in Louisiana.');
@@ -43,12 +39,8 @@ question2();
 
 
 
-// QUESTION 3
-
 function question3() {
   var Deb = prompt('Speaking of Louisiana- was I a debutante?');
-  // console.log('Does the user think I\'m was a deb? ' + Deb)
-
   if (Deb.toLowerCase() === 'yes') {
     alert('No way! My upbringing was not nearly that fancy!');
   } else if(Deb.toLowerCase() === 'no'){
@@ -57,19 +49,13 @@ function question3() {
   } else {
     alert('Please enter yes or no.');
   }
-  // your loop
-
 }
 
-// call function
 
 question3();
 
-// QUESTION 4
 function question4() {
   var SameThing = prompt('On a related note, is cotillion the same as being a debutante?');
-  // console.log('Does the user think cotillion and being a deb are the same thing? ' + SameThing)
-
   if (SameThing.toLowerCase() === 'yes') {
     alert('No way! They are very different! Once you\'re done with this fabulous quiz, Google the difference!');
   } else if(SameThing.toLowerCase() === 'no'){
@@ -85,11 +71,9 @@ question4();
 
 
 
-// QUESTION 5
 function question5() {
 
   var Siblings = prompt('OK, it\'s time for the last question. I\'ll even make it an easy one. Do I have any siblings?');
-  // console.log('Does the user think I have any siblings? ' + Siblings)
 
   if (Siblings.toLowerCase() === 'yes') {
     alert('Nope! I\'m an only child. Thanks for playing this guessing game, ' + Name);
@@ -104,7 +88,6 @@ function question5() {
 question5();
 
 
-// QUESTION 6
 function question6() {
 
   var number = 7;
@@ -125,20 +108,17 @@ function question6() {
       break;
     }
   }
-  // your loop
 
 }
 question6();
 
 
-// QUESTION 7
 function question7() {
   var movies = ['Titanic', 'Get Out', 'The Labyrinth'];
 
   for (var x = 0; x < 6; x++){
     var whatmovie = prompt('Can you guess one of my favorite movies?');
     var answeredcorrect = false;
-    // this loop only checks for correct answers
     for (var j = 0; j < movies.length; j++){
       if (movies[j] === whatmovie){
         finalScore++;
