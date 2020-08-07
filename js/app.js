@@ -142,7 +142,7 @@ function question7() {
     for (var j = 0; j < movies.length; j++){
       if (movies[j] === whatmovie){
         finalScore++;
-        alert('You are correct!');
+        alert('You are correct! All of the possible answers were Titanic, Get Out, or The Labyrinth');
         answeredcorrect = true;
       }
     }
